@@ -1,10 +1,11 @@
 #include <ut.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <libgen.h>
 
 int main(int argc, char **argv)
 {
-    ut_init();
+    ut_init(basename(argv[0]));
 
     ut_section("Test Section");
 

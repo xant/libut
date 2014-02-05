@@ -66,11 +66,11 @@ ut_windowsize(void)
 }
 
 void
-ut_init()
+ut_init(char *programname)
 {
     ut_windowsize();
 
-    printf("==> Testing %s\n", getprogname());
+    printf("==> Testing %s\n", programname);
 }
 
 void

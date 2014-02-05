@@ -39,8 +39,9 @@ extern int ut_succeeded; //!< Number of succesfull tests
 
 /**
  * @brief Initialise the lib.
+ * @param progname The program name to announce
  */
-void ut_init(void);
+void ut_init(char *progname);
 
 /*!
  * \brief Insert a section header.
