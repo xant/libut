@@ -1,0 +1,33 @@
+#include <ut.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+    ut_init();
+
+    ut_section("Test Section");
+
+    ut_testing("Testing integer");
+    int a = 5;
+    ut_validate_int(a, 5);
+
+    ut_testing("Testing strings");
+    char *string = "CIAO";
+    ut_validate_string(string, "CIAO");
+
+    ut_testing("Testing doubles");
+    double b = 0.99;
+    ut_validate_double(b, 0.99);
+
+    ut_testing("Testing progress");
+    for (int i = 0; i < 100000; i ++) {
+        ut_progress(i/1000);
+    }
+    ut_success();
+
+    ut_summary();
+
+    return ut_failed;
+}
+
