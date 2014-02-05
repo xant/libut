@@ -22,7 +22,8 @@ int main(int argc, char **argv)
     ut_validate_double(b, 0.99);
 
     ut_testing("Testing progress");
-    for (int i = 0; i < 100000; i ++) {
+    int i;
+    for (i = 0; i < 100000; i ++) {
         ut_progress(i/1000);
     }
     ut_success();
