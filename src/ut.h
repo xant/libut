@@ -14,7 +14,7 @@
  * {
  * ...
  *
- *     ut_init();
+ *     ut_init(progname);
  * ...
  *     ut_testing("function1(args1)");
  *     char *val = function1(args1);
